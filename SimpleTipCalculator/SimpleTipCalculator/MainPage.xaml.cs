@@ -27,6 +27,8 @@ namespace SimpleTipCalculator
             bill.Text = "";
             tip.Text = "";
             guests.Text = "";
+            totBill.Text = "";
+            totTip.Text = "";
 
         }
     }
