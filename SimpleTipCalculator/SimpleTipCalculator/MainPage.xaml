@@ -19,13 +19,16 @@
             <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
-            <Label Text="Bill:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="LightBlue" TextColor="black"/>
+        <!--<Label  Text="Bill:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="LightBlue" TextColor="black"/>-->
+        <Button  Text="Bill:" Clicked="BillPriceButtonClicked" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="LightBlue" TextColor="black"/>
         <Entry x:Name="bill" Placeholder="Enter Bill"  Grid.Row="0" Grid.Column="1" Keyboard="Numeric" TextColor="Black" PlaceholderColor="Gray"/>
 
-        <Label Text="Tip:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="LightBlue" TextColor="black"/>
+        <!--<Label Text="Tip:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="LightBlue" TextColor="black"/>-->
+        <Button  Text="Tip:" Clicked="TipAmountButtonClicked" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="LightBlue" TextColor="black"/>
         <Entry x:Name="tip" Placeholder="Enter Tip" Grid.Row="1" Grid.Column="1" Keyboard="Numeric" TextColor="Black" PlaceholderColor="Gray"/>
 
-        <Label Text="No of Guests" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="LightBlue" TextColor="black"/>
+        <!--<Label Text="No of Guests" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="LightBlue" TextColor="black"/>-->
+        <Button  Text="Guests:" Clicked="GuestAmountButtonClocked" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="LightBlue" TextColor="black"/>
         <Entry x:Name="guests" Placeholder="Enter Bill" Grid.Row="2" Grid.Column="1" Keyboard="Numeric" TextColor="Black" PlaceholderColor="Gray"/>
 
         <Label  Text="Total Bill:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="LightBlue" TextColor="black"/>
@@ -35,9 +38,9 @@
         <Label x:Name="totTip" Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="24" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="1" BackgroundColor="LightGray" TextColor="black"/>
 
         <Button Clicked="calcBill" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0,20,0" Text="Calculate Bill"/>
-        <Button Clicked="clear" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0,20,0" Text="Clear"/>
-
-
+        
+            <Button Clicked="clear" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0,20,0" Text="Clear"/>
+
         <Image Source="maple.jpg" BackgroundColor="Red" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2"/>
     </Grid>
 
